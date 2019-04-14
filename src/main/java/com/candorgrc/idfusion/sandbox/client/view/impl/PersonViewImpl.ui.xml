@@ -5,185 +5,108 @@
 	<ui:style>
 	
 	</ui:style>
-	<g:HTMLPanel styleName="person-view">
-		<div class="container">
-		<header>
-			<form>
-				<div class="form-row">
-					<div class="col-auto my-1">
-						<label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-						<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-							<option selected="">Title:</option>
-							<option value="1">Mr.</option>
-							<option value="2">Mrs.</option>
-							<option value="3">Ms.</option>
-						</select>
-					</div>
-					<div class="col-md-4 mb-3">
-						<label for="validationServer01">First name</label>
-						<input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Mark" required=""/>
-						<div class="valid-feedback">
-							Looks good!
-						</div>
-					</div>
-					<div class="col-md-4 mb-3">
-						<label for="validationServer02">Last name</label>
-						<input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="Otto" required=""/>
-						<div class="valid-feedback">
-							Looks good!
-						</div>
-					</div>
-					<div class="col-md-4 mb-3">
-						<label for="validationServerUsername">Username</label>
-						<div class="input-group">
-							<div class="input-group-prepend">
-								<span class="input-group-text" id="inputGroupPrepend3">@</span>
-							</div>
-							<input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="Username" aria-describedby="inputGroupPrepend3" required=""/>
-							<div class="invalid-feedback">
-								Please choose a username.
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="form-row">
-					<div class="col-md-6 mb-3">
-						<label for="validationServer03">City</label>
-						<input type="text" class="form-control is-invalid" id="validationServer03" placeholder="City" required=""/>
-						<div class="invalid-feedback">
-							Please provide a valid city.
-						</div>
-					</div>
-					<div class="col-md-3 mb-3">
-						<label for="validationServer04">State</label>
-						<input type="text" class="form-control is-invalid" id="validationServer04" placeholder="State" required=""/>
-						<div class="invalid-feedback">
-							Please provide a valid state.
-						</div>
-					</div>
-					<div class="col-md-3 mb-3">
-						<label for="validationServer05">Zip</label>
-						<input type="text" class="form-control is-invalid" id="validationServer05" placeholder="Zip" required=""/>
-						<div class="invalid-feedback">
-							Please provide a valid zip.
-						</div>
-					</div>
-				</div>
-				<div class="form-group">
-					<div class="form-check">
-						<input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required=""/>
-						<label class="form-check-label" for="invalidCheck3">
-							Agree to terms and conditions
-						</label>
-						<div class="invalid-feedback">
-							You must agree before submitting.
-						</div>
-					</div>
-				</div>
-				<button class="btn btn-primary" type="submit">Submit form</button>
-			</form>
-			<div class="filter-toolbar">
-				<div class="title">
-					<span class="label">Title:</span>
-					<select class="value">
+	<g:HTMLPanel styleName="person-view container-fluid">
+		<form class="filter-toolbar clearfix">
+			<div class="form-row">
+				<div class="title form-group col-md-1">
+					<label class="label">Title:</label>
+					<select class="value form-control">
 						<option value=""></option>
 						<option value="Mr.">Mr.</option>
 						<option value="Mrs.">Mrs.</option>
 						<option value="Ms.">Ms.</option>
 					</select>
 				</div>
-				<div class="first-name">
-					<span class="label">First Name:</span>
-					<input type="text" class="value" />
+				<div class="first-name form-group col-md-6">
+					<label class="label">First Name:</label>
+					<input type="text" class="value form-control" />
 				</div>
-				<div class="last-name">
-					<span class="label">Last Name:</span>
-					<input type="text" class="value" />
+				<div class="last-name form-group col-md-5">
+					<label class="label">Last Name:</label>
+					<input type="text" class="value form-control" />
 				</div>
-				<div class="suffix">
-					<span class="label">Suffix:</span>
-					<select class="value">
+				<div class="suffix form-group col-md-2">
+					<label class="label">Suffix:</label>
+					<select class="value form-control">
 						<option value=""></option>
 						<option value="PhD">PhD.</option>
 						<option value="Engineer">Engineer</option>
 						<option value="Doctor">Doctor</option>
 					</select>
 				</div>
-				<div class="gender">
-					<span class="label">Gender:</span>
-					<select class="value">
+				<div class="gender form-group col-md-2">
+					<label class="label">Gender:</label>
+					<select class="value form-control">
 						<option value=""></option>
 						<option value="m">Male</option>
 						<option value="f">Female</option>
 					</select>
 				</div>
-				<div class="race">
-					<span class="label">Race:</span>
-					<input type="text" class="value" />
+				<div class="race form-group col-md-4">
+					<label class="label">Race:</label>
+					<input type="text" class="value form-control" />
 				</div>
-				<div class="language">
-					<span class="label">Language:</span>
-					<input type="text" class="value" />
+				<div class="language form-group col-md-4">
+					<label class="label">Language:</label>
+					<input type="text" class="value form-control" />
 				</div>
-				<div class="university">
-					<span class="label">University:</span>
-					<input type="text" class="value" />
+				<div class="university form-group col-md-4">
+					<label class="label">University:</label>
+					<input type="text" class="value form-control" />
 				</div>
-				<div class="buzzword">
-					<span class="label">Buzzword:</span>
-					<input type="text" class="value" />
+				<div class="buzzword form-group col-md-2">
+					<label class="label">Buzzword:</label>
+					<input type="text" class="value form-control" />
 				</div>
-				<div class="email">
-					<span class="label">E-Mail:</span>
-					<input type="text" class="value" />
+				<div class="email form-group col-md-6">
+					<label class="label">E-Mail:</label>
+					<input type="text" class="value form-control" />
 				</div>
-				<div class="job-title">
-					<span class="label">Job Title:</span>
-					<input type="text" class="value" />
+				<div class="job-title form-group col-md-3">
+					<label class="label">Job Title:</label>
+					<input type="text" class="value form-control" />
 				</div>
-				<div class="linkedin-skill">
-					<span class="label">LinkedinIn Skill:</span>
-					<input type="text" class="value" />
+				<div class="linkedin-skill form-group col-md-9">
+					<label class="label">LinkedinIn Skill:</label>
+					<input type="text" class="value form-control" />
 				</div>
-				<div class="company">
-					<span class="label">Company:</span>
-					<input type="text" class="value" />
+				<div class="company form-group col-md-6">
+					<label class="label">Company:</label>
+					<input type="text" class="value form-control" />
 				</div>
-				<div class="dept">
-					<span class="label">Department:</span>
-					<input type="text" class="value" />
+				<div class="dept form-group col-md-6">
+					<label class="label">Department:</label>
+					<input type="text" class="value form-control" />
 				</div>
-				<div class="ein">
-					<span class="label">Employer Identification Number:</span>
-					<input type="text" class="value" />
+				<div class="ein form-group col-md-6">
+					<label class="label">Employer Identification Number:</label>
+					<input type="text" class="value form-control" />
 				</div>
-
-
-				<div>
+				<div class="form-group col-md-3">
 					<label for="start">Start</label>
-					<input type="date" id="start" value="2018-09-29"
+					<input class="form-control" type="date" id="start" value="2018-09-29"
 						min="2018-01-01" max="2018-12-31" />
 				</div>
-				<div>
+				<div class="form-group col-md-3">
 					<label for="end">End</label>
-					<input type="date" id="end" value="2018-10-29"
+					<input class="form-control" type="date" id="end" value="2018-10-29"
 						min="2018-01-01" max="2018-12-31" />
 				</div>
-
 			</div>
 			<button ui:field="apply" class="apply-filters">Apply Filters</button>
-		</header>
-		<section>
+		</form>
+		<section class="clearfix">
 			<header class="controls">
 				<button ui:field="toggle" class="toggle-view-mode">Switch View Mode</button>
 				<button ui:field="reset" class="reset">Reset Data Collection</button>
 			</header>
-			<dp:PersonCellList ui:field="personList"
-				styleName="grid-view"></dp:PersonCellList>
+			<div class="grid-area">
+				<dp:PersonCellList ui:field="personList"
+								   styleName="grid-view"></dp:PersonCellList>
+			</div>
 		</section>
-		<footer>
+		<footer class="clearfix">
 			<button ui:field="fetch" class="fetch">Fetch more...</button>
 		</footer>
-		</div>
 	</g:HTMLPanel>
 </ui:UiBinder> 

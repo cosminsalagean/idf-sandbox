@@ -65,7 +65,7 @@ public class Workspace extends Composite {
 	}
 
 	/**
-	 * Register handlers on the BUS
+	 * filter-toolbar handlers on the BUS
 	 */
 	private void addEventBusHandlers() {
 

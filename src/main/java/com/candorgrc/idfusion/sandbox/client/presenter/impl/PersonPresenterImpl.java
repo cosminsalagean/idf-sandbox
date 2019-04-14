@@ -39,7 +39,7 @@ public class PersonPresenterImpl implements PersonPresenter {
 	}
 
 	/**
-	 * Register handlers on the BUS
+	 * filter-toolbar handlers on the BUS
 	 */
 	// private void addEventBusHandlers() {
 	// // nothing to do
